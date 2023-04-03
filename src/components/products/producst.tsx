@@ -1,13 +1,7 @@
 import React from 'react';
 import styles from './products.module.css';
+import { ProductProps } from '@/interfaces/productos'
 
-interface ProductProps {
-  imageSrc: string;
-  title: string;
-  description: string;
-  price: number;
-  imageshop:string;
-}
 
 const Product: React.FC<ProductProps> = ({
   imageSrc,
