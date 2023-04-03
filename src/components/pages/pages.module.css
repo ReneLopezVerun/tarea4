@@ -1,0 +1,23 @@
+.button:first-of-type {
+    background-color: #F76B12;
+    border: none;
+    border-radius: 10px;
+    color: black;
+    font-size: 16px;
+    padding: 10px 20px;
+    margin-right: 10px;
+  }
+  
+.button:not(:first-of-type) {
+    background-color: #D9D9D9;
+    border: none;
+    border-radius: 10px;
+    color: black;
+    font-size: 16px;
+    padding: 10px 20px;
+    margin-right: 10px;
+  }
+
+.button:hover{
+    cursor: pointer;
+}

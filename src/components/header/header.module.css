@@ -1,0 +1,64 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #fff;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  }
+  
+  .left {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #0070f3;
+  }
+  
+  .logo img {
+    height: 2rem;
+    margin-right: 0.5rem;
+  }
+  
+  .center {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .titulp {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .navi .ull {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .navi .lis:not(:last-child) {
+    margin-right: 1rem;
+  }
+  
+  .navi .ah {
+    color: #0070f3;
+    text-decoration: none;
+    font-size: 1.25rem;
+  }
+  
+  .right {
+    display: flex;
+    align-items: center;
+  }
+  
+  .right img {
+    height: 2rem;
+    margin-right: 1rem;
+  }
+  
