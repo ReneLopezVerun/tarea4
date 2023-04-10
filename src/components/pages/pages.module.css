@@ -21,3 +21,23 @@
 .button:hover{
     cursor: pointer;
 }
+
+/* Estilos para pantallas de menos de 600px */
+@media (max-width: 600px) {
+  .button:first-of-type,
+  .button:not(:first-of-type) {
+    margin-bottom: 10px;
+    margin-right: 0;
+    width: 100%;
+  }
+}
+
+/* Estilos para pantallas de menos de 700px */
+@media (max-width: 700px) {
+  .button:first-of-type,
+  .button:not(:first-of-type) {
+    margin-bottom: 10px;
+    margin-right: 0;
+    width: 50%;
+  }
+}

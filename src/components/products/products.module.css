@@ -1,1 +1,73 @@
 
+.card{
+    margin-bottom: 61px;
+}
+
+.image{
+    margin-bottom: 15px;
+}
+
+.title{
+    margin-bottom: 5px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.price{
+margin-bottom: 15px;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 28px;
+}
+
+/* Estilos para pantallas de menos de 600px */
+@media (max-width: 600px) {
+    .card {
+      margin-bottom: 20px;
+      width: 80%;
+    }
+  
+    .image {
+      margin-bottom: 10px;
+    }
+  
+    .title {
+      margin-bottom: 5px;
+      font-size: 20px;
+      line-height: 24px;
+    }
+  
+    .price {
+      margin-bottom: 10px;
+      font-size: 20px;
+      line-height: 24px;
+    }
+  }
+  
+  /* Estilos para pantallas de menos de 700px */
+  @media (max-width: 700px) {
+    .card {
+      margin-bottom: 30px;
+      width: 50%;
+    }
+  
+    .image {
+      margin-bottom: 20px;
+    }
+  
+    .title {
+      font-size: 18px;
+      line-height: 22px;
+    }
+  
+    .price {
+      font-size: 18px;
+      line-height: 22px;
+    }
+  }
+  

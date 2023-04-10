@@ -1,9 +1,29 @@
-
-.containerImages{
-  position: relative;
+.containerImages {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+  
+/* Estilos para pantallas de menos de 600px */
+@media (max-width: 600px) {
+  .containerImages {
+    flex-wrap: wrap;
+  }
+  .image {
+    width: 50%;
+    height: auto;
+  }
 }
 
-.my-image {
-    border: 1px solid #ccc;
+/* Estilos para pantallas de menos de 700px */
+@media (max-width: 700px) {
+  .containerImages {
+    flex-direction: column;
   }
-  
+  .image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+}

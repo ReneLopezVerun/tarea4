@@ -1,30 +1,35 @@
-import Link from 'next/link';
 import styles from './header.module.css';
 
 function Header() {
   return (
     <header className={styles.header}>
-      <div className={styles.left}>
-        <Link href="#">
-          <a className={styles.logo}>
-            <img src="/images/logo.png" alt="Logo" />
-            <span>Página Web</span>
-          </a>
-        </Link>
-      </div>
-      <div className={styles.center}>
-        <h1 className={styles.titulo} >E-commerce</h1>
-        <nav className={styles.navi}>
-          <ul className={styles.ull}>
-            <li className={styles.lis}><Link href="#" passHref><a className={styles.as}>Home</a></Link></li>
-            <li className={styles.lis}><Link href="#" passHref><a className={styles.as}>Catalogo</a></Link></li>
-          </ul>
-        </nav>
-      </div>
-      <div className={styles.right}>
-        <Link href="#" passHref><a><img src="/images/cart.png" alt="Cart" /></a></Link>
-        <Link href="#" passHref><a>Crear cuenta</a></Link>
-        <Link href="#" passHref><a>Mi cuenta</a></Link>
+      <div className={styles.container}>
+        
+        <img className={styles.headerlogo} src="headerlogo.svg" alt="headerlogo" />
+        
+        <div className={styles.titlesCont}>
+        <h1 className={styles.title}>E-commerce</h1>
+        <div className={styles.subtitles}>
+          <h2 className={styles.subtitle}>Home</h2>
+          <h2 className={styles.subtitle}>Catalogo</h2>
+        </div>
+        </div>
+      
+        <div className={styles.cuentas}>
+          <div className={styles.cartCont}>
+          
+          <img className={styles.headerCart} src="Vector.svg" alt="headerlogo" />
+
+          <div className={styles.llantas}>
+          <img className={styles.headerLlanta} src="llanta.svg" alt="headerlogo" />
+          <img className={styles.headerLlanta} src="llanta.svg" alt="headerlogo" />
+          </div>
+          
+          </div>
+          <h2 className={styles.subtitle}>Crear cuenta</h2>
+          <h2 className={styles.subtitle}>Mi cuenta</h2>
+        </div>
+
       </div>
     </header>
   );

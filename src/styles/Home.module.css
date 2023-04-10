@@ -3,7 +3,8 @@
   }
 
 .containerImage{
-  height: 30vh;
+  height: 50vh;
+  background-color: red;
 }
   
 .catalogo{
@@ -28,4 +29,47 @@
   height: 30vh;
   display: flex;
   align-items: center;
+}
+
+/* Estilos para pantallas de menos de 600px */
+@media (max-width: 600px) {
+  .containerMain {
+    display: block;
+  }
+
+  .containerImage {
+    height: 30vh;
+    background-color: red;
+  }
+
+  .catalogo {
+    margin-left: 2%;
+  }
+
+  .containerCard {
+    justify-content: center;
+  }
+
+  .card {
+    width: 80%;
+  }
+
+  .pagesContainer {
+    height: 20vh;
+  }
+}
+
+/* Estilos para pantallas de menos de 700px */
+@media (max-width: 700px) {
+  .containerImage {
+    height: 40vh;
+  }
+
+  .card {
+    width: 50%;
+  }
+
+  .pagesContainer {
+    height: 25vh;
+  }
 }
